@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ichimoku-oanda-connector
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn main:app"
+    envVars:
+      - key: OANDA_API_KEY
+        sync: false
+      - key: ACCOUNT_ID
+        sync: false
