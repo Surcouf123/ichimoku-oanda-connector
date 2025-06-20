@@ -1,0 +1,1 @@
+# ichimoku-oanda-connector
