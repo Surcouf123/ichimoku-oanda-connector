@@ -39,4 +39,5 @@ def index():
     return "Middleware Ichimoku Karen Peloille actif!"
 
 if __name__ == '__main__':
-    app.run(debu
+    app.run(host='0.0.0.0', port=10000)
+
